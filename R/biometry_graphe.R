@@ -1,4 +1,4 @@
-# Biometrie - worflow
+# Biometrie - workflow
 
 # Setup ----
 
@@ -33,4 +33,6 @@ biometry <- labelise(biometry, self = FALSE,
     measurement_date = "année")
 )
 
-# Ci-dessous vos graphiques ----
+# Graphiques ----
+
+## %Réalisez 4 graphiques ci-dessous

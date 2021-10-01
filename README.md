@@ -2,15 +2,17 @@
 
 ## Avant-propos
 
-Il est possible que ce document évolue au cours du temps. N'hésitez pas à aller vérifier le lien suivant afin de voir les modifications dans les consignes : <https://github.com/BioDataScience-Course/A02Gb_workflow>
+Il est possible que ce document évolue au cours du temps. N'hésitez pas à aller vérifier le lien suivant afin de voir les modifications dans les consignes : <https://github.com/BioDataScience-Course/A02Ga_21_workflow>
 
 ## Objectif
 
-Ce projet est un projet **individuel**, **court** et **cadré** qui doit être terminé pour la fin du module 2. Il porte sur la biométrie humaine. Son but est de vous faire réaliser l'intérêt de R Markdown pour écrire des documents scientifiques de manière à ce qu'ils soient reproductibles et faciles à mettre à jour.
+Ce projet est un projet **en binôme**, **court** et **cadré** qui doit être terminé pour la fin du module 2.
+
+L'objectif est de s'intéresser R Markdown pour écrire des documents scientifiques de manière à ce qu'ils soient reproductibles et faciles à mettre à jour.
 
 ## Consignes
 
-Vous êtes dans la peau d'un biologiste qui analyse des données de biométrie humaine. Vous avez à votre disposition deux jeux de données répartis en deux fichiers, disponibles à partir du sous-dossier `data` de ce projet.
+Vous êtes dans la peau de biologistes qui analyse des données de biométrie humaine. Vous avez à votre disposition deux jeux de données répartis en deux fichiers, disponibles à partir du sous-dossier `data` de ce projet.
 
 - `biometry_2014.xlsx`
 - `biometry_2016.xlsx`
@@ -22,34 +24,46 @@ Ces fichiers comprennent 7 variables :
 - yb : année de naissance
 - weight : masse en kg
 - height : taille en cm
-- wrist : circomférence du poignet en mm
+- wrist : circonférence du poignet en mm
 - measurement_date : année de la prise de mesure
 
-#### Analyse de `biometry_2014.xlsx`
+### Analyse de `biometry_2014.xlsx`
 
-- Utilisez ce jeu de données afin de réaliser un graphique de type nuage de points (choisissez-en un qui vous parait pertinent). Pour cela, utilisez le script R `biometry_graphe.R` qui est dans le sous-dossier `R`.
+Le tableau `biometry_2014.xlsx` comprend des mesures biométriques collectées en 2014. 
 
-- Incorporez ensuite le graphique généré dans un rapport sous Microsoft Word (fichier nommé `biometry_word.docx` et placé dans le sous-dossier `docs`). Structurez votre rapport avec les différentes sections de la rédaction scientifique (introduction, but, matériel et méthodes, résultats, discussion et conclusions). Ajoutez une courte phrase relative à chaque section pour donner un peu de contenu à votre rapport, sans plus. Le graphique est à incorporer dans la section "résultats". Des explications détaillées sur la rédaction scientifique se trouvent dans l’[annexe ](https://wp.sciviews.org/sdd-umons/?iframe=wp.sciviews.org/sdd-umons-2020/redaction-scientifique.html) dédiée à cette dernière.
+**Vous avez une succession d'étape à réaliser par le premier ou le second collaborateur. Il y a plusieurs commit, pull, push à réaliser. Nous vous conseillons pour ce premier projet en groupe de réaliser les étapes ensemble.**
 
-- Réalisez ensuite le même rapport mais dans un document R Markdown (format .Rmd). Pour cela, complétez le document `biometry.Rmd` mis à votre disposition dans le sous-dossier `docs` avec les différentes sections propre à un rapport scientifique. Copiez-y le texte que vous avez écrit précédemment, et utilisez le formattage propre à markdown. Incorporez-y également le graphique de type nuage de point dans la partie "résultats". Pour cela, copiez le code R issu du script `biometry_graphe.R` dans un chunks permettant de lire les données, et ensuite de réaliser le graphique.
+1. Réalisez 4 graphiques dans le script `biometry_graphe.R` qui est dans le sous-dossier `R`.
+    + Le premier collaborateur réalise 2 graphiques. Il fait ensuite un commit et un push.
+    + Le second collaborateur commence par faire un pull. Il réalise ensuite 2 graphiques différents. Il termine par un commit et un push.
 
-- Compilez votre rapport R Markdown en trois formats différents : "HTML", "PDF" et "Word". Examinez le résultat, et comparez en particulier les deux version Word de votre rapport.
-
-- Réalisez un `commit` signifiant la fin de cette première analyse. 
-
+2. Réalisez un rapport d'analyse avec Microsoft Word
+    + Le premier collaborateur réalise un pull.
+    + Le premier collaborateur ajoute dans le dossier docs/ un nouveau document nommé `biometry_word.docx`. Ce document doit être structuré. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
+    + Le premier collaborateur incorpore un graphique pertinent dans la section analyse de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous pouvez utiliser une capture d'écran pour extraire votre graphique et l'incorporer sous la forme d'une image dans votre document.
+    + Le premier collaborateur réalise un commit et un push.
+  
+3. Réalisez un rapport d'analyse avec R Markdown.
+    + Le second collaborateur réalise un pull.
+    + Le second collaborateur édite `biometry.Rmd`. Ce document doit être identique à `biometry_word.dock`. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
+    + Le second collaborateur incorpore un graphique pertinent dans la section analyse de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous devez ajouter un chunk contenant le code qui permet de générer ce document.
+    + Le second collaborateur vérifie que son document est compilable. Le document doit être compilé en "HTML", "PDF" et "Word".
+    + Le second collaborateur réalise un commit et un push.
+  
 ### Nouvelles données `biometry_2016.xlsx`
 
 Après avoir réalisé une première version de vos rapports, l'un dans Word, et l'autre dans R Markdown, avec les données de `data/biometry_2014.xlsx`, vous recevez de nouvelles données (celles dans`data/biometry_2016.xlsx`).
 
-- Actualisez votre rapport sous Microsoft Word avec ces nouvelles données. Vous devez bien évidemment actualiser le graphique, ce qui revient donc à remplacer l'ancienne version par un graphique recalculé avec toutes les données 2014 + 2016.
+4. Le premier collaborateur réalise un pull,  actualise le rapport sous R Markdown, réalise un commit et un push.
 
-- Faites de même pour votre rapport sous R Markdown.
+5. Le second collaborateur réalise un pull, actualise le rapport sous Microsoft Word. Vous devez bien évidemment actualiser le graphique, ce qui revient donc à remplacer l'ancienne version par un graphique recalculé. Il réalise ensuite un commit et un push.
+
 
 ### Comparaison des deux méthodes
 
-A la suite de vos analyses, répondez aux questions ci-dessous pour cadrer votre réflexion sur le workflow et la recherche reproductible.
+À la suite de vos analyses, répondez aux questions ci-dessous pour cadrer votre réflexion sur le workflow et la recherche reproductible.
 
-Utilisez un fichier RMarkdown (`.Rmd`) pour y consigner vos réponses et placez-le dans votre projet RStudio. Nommez ce fichier `workflow.Rmd`
+6. Utilisez un fichier RMarkdown (`.Rmd`) pour y consigner vos réponses et placez-le dans votre projet RStudio. Nommez ce fichier `workflow.Rmd`
 
 - Quel workflow vous semble le plus simple à l'utilisation, et pourquoi ?
 
@@ -59,13 +73,13 @@ Utilisez un fichier RMarkdown (`.Rmd`) pour y consigner vos réponses et placez-
 
 - Quel workflow vous semble le plus simple et le plus approprié lorsque plusieurs personnes collaborent pour rédiger un rapport ? 
 
-### Etat de progression 
+### État de progression 
 
-A la fin de ce module, vous devez avoir :
+À la fin de ce module, vous devez avoir :
 
-- un script R nommé `biometry_graphe.R` (dans le dossier `R`) qui comprend vos premiers graphique que vous utiliserez dans le document `biometry_word.docx` (dans le dossier `docs`)
+- un script R nommé `biometry_graphe.R` (dans le dossier `R`) qui comprend vos premiers graphiques que vous utiliserez dans le document `biometry_word.docx` (dans le dossier `docs`)
 
-- un fichier au format .doc ou .docx nommé `biometry_word.docx` (dans le dossier `docs`) comprend le nuage de point le plus à jour.
+- un fichier au format .doc ou .docx nommé `biometry_word.docx` (dans le dossier `docs`) qui comprend le nuage de point le plus à jour.
 
 - un fichier au format .Rmd nommé `biometry.Rmd` (dans le dossier `docs`) qui comprend le nuage de point le plus à jour.
 

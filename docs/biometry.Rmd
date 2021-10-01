@@ -1,11 +1,14 @@
 ---
 title: "Workflow en Biologie - Biométrie humaine"
-author: "..."
-date: "..."
-output: html_document
+author: '...'
+date: '...'
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
-<!-- RC : ATTENTION de ne pas supprimer les lignes de codes ci-dessous, elles vous permettent d'importer et de formater les données. -->
+<!--# ATTENTION de ne pas supprimer les lignes de codes ci-dessous, elles vous permettent d'importer et de formater les données. -->
 
 ```{r setup}
 SciViews::R
@@ -39,4 +42,10 @@ biometry <- labelise(biometry, self = FALSE,
     measurement_date = "année")
 )
 ```
+
+<!--% Ajoutez une section Introduction et décrivez en 2-3 lignes le sujet de ce document.-->
+
+
+<!--% Ajoutez une section Analyses, un chunk, le code correspondant à votre graphique et la description de ce dernier-->
+
 

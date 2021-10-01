@@ -37,3 +37,14 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# README
+README.html
+
+# Compiled files
+docs/*.html
+docs/*.pdf
+
+docs/biometry.docx
+docs/biometry.doc
+
