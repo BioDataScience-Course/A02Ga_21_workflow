@@ -42,6 +42,10 @@ Le tableau `biometry_2014.xlsx` comprend des mesures biométriques collectées e
     + Le premier collaborateur ajoute dans le dossier docs/ un nouveau document nommé `biometry_word.docx`. Ce document doit être structuré. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
     + Le premier collaborateur incorpore un graphique pertinent dans la section analyse de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous pouvez utiliser une capture d'écran pour extraire votre graphique et l'incorporer sous la forme d'une image dans votre document.
     + Le premier collaborateur réalise un commit et un push.
+
+Le dossier `shared` où vous avez cloné votre projet dans la SciViews Box est un dossier partagé entre votre ordinateur hôte et votre machine virtuelle. Vous pouvez cliquer sur `Go to shared folder`.
+
+![](figures/shared_folder.png)
   
 3. Réalisez un rapport d'analyse avec R Markdown.
     + Le second collaborateur réalise un pull.
