@@ -37,19 +37,12 @@ Le tableau `biometry_2014.xlsx` comprend des mesures biométriques collectées e
     + Le premier collaborateur réalise 2 graphiques. Il fait ensuite un commit et un push.
     + Le second collaborateur commence par faire un pull. Il réalise ensuite 2 graphiques différents. Il termine par un commit et un push.
 
-2. Réalisez un rapport d'analyse avec Microsoft Word
-    + Le premier collaborateur réalise un pull.
-    + Le premier collaborateur ajoute dans le dossier docs/ un nouveau document nommé `biometry_word.docx`. Ce document doit être structuré. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
-    + Le premier collaborateur incorpore un graphique pertinent dans la section analyse de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous pouvez utiliser une capture d'écran pour extraire votre graphique et l'incorporer sous la forme d'une image dans votre document.
-    + Le premier collaborateur réalise un commit et un push.
+2. Réalisez un rapport d'analyse avec Microsoft Word Online < www.umons.ac.be/office365> ou Google docs. Ce document doit se nommer biometry_word_NOMDUGROUPE. Ce document doit être structuré. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. Il faut intégrer un graphique pertinent dans la section analyses de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous pouvez utiliser une capture d'écran pour extraire votre graphique de RStudio et l'incorporer sous la forme d'une image dans votre document. Vous devez partager ce document afin qu'il soit téléchargeable. Le lien pour accéder à ce document doit se trouver dans `biometry_online.Rmd`. Réalisez un Pull, un commit et un push.
 
-Le dossier `shared` où vous avez cloné votre projet dans la SciViews Box est un dossier partagé entre votre ordinateur hôte et votre machine virtuelle. Vous pouvez cliquer sur `Go to shared folder`.
 
-![](figures/shared_folder.png)
-  
 3. Réalisez un rapport d'analyse avec R Markdown.
     + Le second collaborateur réalise un pull.
-    + Le second collaborateur édite `biometry.Rmd`. Ce document doit être identique à `biometry_word.dock`. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
+    + Le second collaborateur édite `biometry.Rmd`. Ce document doit être identique au document en ligne. Il doit comprendre un `titre général`, une section `introduction` et une section `analyses`. 
     + Le second collaborateur incorpore un graphique pertinent dans la section analyse de ce rapport. Ce graphique doit être décrit en 3 à 5 phrases. Vous devez ajouter un chunk contenant le code qui permet de générer ce document.
     + Le second collaborateur vérifie que son document est compilable. Le document doit être compilé en "HTML", "PDF" et "Word".
     + Le second collaborateur réalise un commit et un push.
@@ -60,8 +53,7 @@ Après avoir réalisé une première version de vos rapports, l'un dans Word, et
 
 4. Le premier collaborateur réalise un pull,  actualise le rapport sous R Markdown, réalise un commit et un push.
 
-5. Le second collaborateur réalise un pull, actualise le rapport sous Microsoft Word. Vous devez bien évidemment actualiser le graphique, ce qui revient donc à remplacer l'ancienne version par un graphique recalculé. Il réalise ensuite un commit et un push.
-
+5. Le second collaborateur réalise un pull, actualise le rapport sous Microsoft Word Online. Vous devez bien évidemment actualiser le graphique, ce qui revient donc à remplacer l'ancienne version par un graphique recalculé. 
 
 ### Comparaison des deux méthodes
 

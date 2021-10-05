@@ -1,0 +1,11 @@
+---
+title: 'Workflow en Biologie - Biométrie Humaine'
+subtitle: "Utilisation d'outils en ligne"
+author: "___"
+date: "__/__/2021"
+output: html_document
+---
+
+<!--% Insérer ci-dessous le lien de téléchargement <LIEN> -->
+
+Le lien de téléchargement vers le travail en ligne est le suivant <___>
