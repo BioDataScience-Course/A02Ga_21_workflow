@@ -73,9 +73,9 @@ Après avoir réalisé une première version de vos rapports, l'un dans Word, et
 
 À la fin de ce module, vous devez avoir :
 
-- un script R nommé `biometry_graphe.R` (dans le dossier `R`) qui comprend vos premiers graphiques que vous utiliserez dans le document `biometry_word.docx` (dans le dossier `docs`)
+- un script R nommé `biometry_graphe.R` (dans le dossier `R`) qui comprend vos premiers graphiques
 
-- un fichier au format .doc ou .docx nommé `biometry_word.docx` (dans le dossier `docs`) qui comprend le nuage de point le plus à jour.
+- un fichier au format .doc ou .docx nommé `biometry_online.docx` (dans le dossier `docs`) qui comprend le nuage de point le plus à jour.
 
 - un fichier au format .Rmd nommé `biometry.Rmd` (dans le dossier `docs`) qui comprend le nuage de point le plus à jour.
 
